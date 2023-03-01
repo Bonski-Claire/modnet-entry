@@ -79,12 +79,19 @@ def infer2(modnet: MODNet, img_path: str, out_alpha_path: str = '', out_img_path
 - `out_img_path`: 输出抠好的图的路径。
 
 修改：
-1.对__init__  define infer2的修改如下所示,
-    # assert out_alpha_path or out_img_path
-    out_alpha_path = 'alpha.png'
-    out_img_path = 'new.png'
-2.抠图后，名称统一以XXX.png命名，从001.png开始。
-3.将 批量处理图片v1.0.py 放到MODNet_entry所在文件夹，将要处理的图片也都再在这里，运行 批量处理图片v1.0.py，即可得到扣好的图片。
+
+- 1.对`__init__`  `define infer2`的修改如下所示,
+<hr/>
+
+```python
+    `# assert out_alpha_path or out_img_path`
+    `out_alpha_path = 'alpha.png'`
+    `out_img_path = 'new.png'`
+```
+
+- 2.抠图后，名称统一以`XXX.png`命名，从`001.png`开始。
+
+- 3.将 `批量处理图片v1.0.py` 放到`MODNet_entry`所在文件夹，将要处理的图片也都再在这里，运行 `批量处理图片v1.0.py`，即可得到扣好的图片。
 
 ## 结束
 
